@@ -2,7 +2,7 @@
 import pandas as pd
 
 #Importamos archivo csv
-df = pd.read_csv("Kaps_adv_published.csv", sep=',')
+df = pd.read_csv("filesToEdit\Kaps_adv_published.csv", sep=',')
 
 
 #Leemos cada título, le sacamos los '\n' y guardamos el titulo editado
@@ -14,4 +14,4 @@ for frame in range(len(df)):
     df.loc[frame, 'title'] = finalString
 
 #Exportamos la data formateada a un nuevo csv
-df.to_csv('Kaps_adv_published.csv', index = False)
+df.to_csv('filesToEdit\Kaps_adv_published.csv', index = False)
