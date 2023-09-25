@@ -1,6 +1,6 @@
 import re
 
-def rhel (title):
+def ubuntu (title):
     # Define a regular expression pattern to match text inside square brackets
     pattern = r'\[([^\]]+)\]'
 

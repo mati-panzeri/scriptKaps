@@ -4,6 +4,7 @@ import cleanNewLine as cl
 import append as append
 from vendorModules import novell as novell
 from vendorModules import rhel as rhel
+from vendorModules import ubuntu as ubuntu
 
 
 #Importamos archivo csv y txt
@@ -46,7 +47,11 @@ for adv in range(len(queue)):
     elif cleanTitle[0] == VENDORS[2]:
         print("Oracle")
     elif cleanTitle[0] == VENDORS[3]:
-        print("Ubuntu")
+        cleanTitle = cleanTitle[1].strip()
+        cleanTitle = ubuntu.ubuntu(cleanTitle)
+        boolean = df['title'].str.contains(cleanTitle, case=False, regex=False)
+        append.append(boolean, cleanTitle, updates, newAdvisories)
+        print(cleanTitle)
         
     
     #print(boolean)
