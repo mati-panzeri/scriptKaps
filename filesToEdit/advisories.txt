@@ -32,3 +32,5 @@ Red Hat: [RHSA-2022:6822-01] Important: Red Hat JBoss Enterprise Application Pla
 Red Hat: [RHSA-2022:6823-01] Important: Red Hat JBoss Enterprise Application Platform 7.4.7 Security update
 Red Hat: [RHSA-2022:6821-01] Important: Red Hat JBoss Enterprise Application Platform 7.4.7 Security update
 Hitachi: Security information for Hitachi Disk Array Systems
+Oracle: [El-errata] ELSA-2023-5191 Important: Oracle Linux 7 thunderbird security update			
+Oracle: [El-errata] ELSA-2023-5197 Important: Oracle Linux 7 firefox security update
