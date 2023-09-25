@@ -3,6 +3,7 @@ import pandas as pd
 import cleanNewLine as cl
 import append as append
 from vendorModules import novell as novell
+from vendorModules import rhel as rhel
 
 
 #Importamos archivo csv y txt
@@ -30,10 +31,6 @@ for adv in range(len(queue)):
         cleanTitle = cleanTitle[1].strip()
         boolean = df['title'].str.contains(cleanTitle, case=False, regex=False)
         append.append(boolean, cleanTitle, updates, newAdvisories)
-        #if boolean.any():
-        #    updates.append(cleanTitle)
-        #else:
-        #    newAdvisories.append(cleanTitle)
     elif cleanTitle[0] == VENDORS[0]:
         cleanTitle = cleanTitle[1].strip()
         cleanTitle = novell.novell(cleanTitle)
@@ -41,7 +38,11 @@ for adv in range(len(queue)):
         append.append(boolean, cleanTitle, updates, newAdvisories)
         print(cleanTitle)
     elif cleanTitle[0] == VENDORS[1]:
-        print("Red Hat")
+        cleanTitle = cleanTitle[1].strip()
+        cleanTitle = rhel.rhel(cleanTitle)
+        boolean = df['title'].str.contains(cleanTitle, case=False, regex=False)
+        append.append(boolean, cleanTitle, updates, newAdvisories)
+        print(cleanTitle)
     elif cleanTitle[0] == VENDORS[2]:
         print("Oracle")
     elif cleanTitle[0] == VENDORS[3]:
