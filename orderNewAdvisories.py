@@ -23,39 +23,39 @@ VENDORS = ['Novell', 'Red Hat', 'Oracle', 'Ubuntu']
 
 
 for adv in range(len(queue)):
-    cleanTitle = cl.cleanNewLine(queue[adv])
+    title = cl.cleanNewLine(queue[adv])
     #list(map(lambda l: l.rstrip('\n'), newAdvisories[adv]))
-    cleanTitle = "".join(cleanTitle)
+    title = "".join(title)
     #print(cleanTitle)
-    cleanTitle = cleanTitle.split(':', 1)
+    cleanTitle = title.split(':', 1)
 
     if cleanTitle[0] not in VENDORS:
         cleanTitle = cleanTitle[1].strip()
         boolean = df['title'].str.contains(cleanTitle, case=False, regex=False)
-        append.append(boolean, cleanTitle, updates, newAdvisories)
+        append.append(boolean, title, updates, newAdvisories)
     elif cleanTitle[0] == VENDORS[0]:
         cleanTitle = cleanTitle[1].strip()
         cleanTitle = novell.novell(cleanTitle)
         boolean = df['title'].str.contains(cleanTitle, case=False, regex=False)
-        append.append(boolean, cleanTitle, updates, newAdvisories)
+        append.append(boolean, title, updates, newAdvisories)
         print(cleanTitle)
     elif cleanTitle[0] == VENDORS[1]:
         cleanTitle = cleanTitle[1].strip()
         cleanTitle = rhel.rhel(cleanTitle)
         boolean = df['title'].str.contains(cleanTitle, case=False, regex=False)
-        append.append(boolean, cleanTitle, updates, newAdvisories)
+        append.append(boolean, title, updates, newAdvisories)
         print(cleanTitle)
     elif cleanTitle[0] == VENDORS[2]:
         cleanTitle = cleanTitle[1].strip()
         cleanTitle = oracle.oracle(cleanTitle)
         boolean = df['title'].str.contains(cleanTitle, case=False, regex=False)
-        append.append(boolean, cleanTitle, updates, newAdvisories)
+        append.append(boolean, title, updates, newAdvisories)
         print(cleanTitle)
     elif cleanTitle[0] == VENDORS[3]:
         cleanTitle = cleanTitle[1].strip()
         cleanTitle = ubuntu.ubuntu(cleanTitle)
         boolean = df['title'].str.contains(cleanTitle, case=False, regex=False)
-        append.append(boolean, cleanTitle, updates, newAdvisories)
+        append.append(boolean, title, updates, newAdvisories)
         print(cleanTitle)
 
 #Creamos archivo nuevo con los adv ordenados

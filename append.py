@@ -1,7 +1,7 @@
-def append (boolean, cleanTitle, updates, newAdvisories):
+def append (boolean, title, updates, newAdvisories):
     if boolean.any():
-        updates.append(cleanTitle)
+        updates.append(title)
     else:
-        newAdvisories.append(cleanTitle)
+        newAdvisories.append(title)
     
     #return updates, newAdvisories
