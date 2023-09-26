@@ -57,18 +57,16 @@ for adv in range(len(queue)):
         boolean = df['title'].str.contains(cleanTitle, case=False, regex=False)
         append.append(boolean, cleanTitle, updates, newAdvisories)
         print(cleanTitle)
-        
-    
-    #print(boolean)
 
-    #updates.append(boolean['title'])
+#Creamos archivo nuevo con los adv ordenados
+nuevoTxt = 'filesToEdit/advisoriesOrdenados.txt'
+with open(nuevoTxt, 'a') as file:
+    file.write('UPDATES\n')
+    for update in updates:
+        file.write(update + '\n')
+    file.write('-------------------\n')
+    file.write('NUEVOS:\n')
+    for new in newAdvisories:
+        file.write(new + '\n')
 
-    #buscar cleanTitle en df titulos
-        # updates.append(cleanTitle)
-    #else:
-    #    newAdvisories.append(cleanTitle)
-    #arrAdvisories.append(cleanTitle)
-
-#print(df['title'])
-print(len(updates))
-print (len(newAdvisories))
+print("Se generó el archivo!")
