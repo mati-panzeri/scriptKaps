@@ -1,0 +1,36 @@
+IBM PSIRT: Security Bulletin: A vulnerability in Samba affects IBM Spectrum Scale SMB protocol access method (CVE-2020-25717)
+IBM PSIRT: Security Bulletin: Information disclosure vulnerability affect IBM Business Automation Workflow and IBM Business Process Manager (BPM)
+IBM PSIRT: Security Bulletin: IBM InfoSphere Information Server is vulnerable to cross-site scripting (CVE-2022-22443)
+IBM PSIRT: Security Bulletin: IBM InfoSphere Information Server is affected by a remote code execution in Spring Framework (CVE-2022-22965)
+IBM PSIRT: A vulnerability in Dojo affects IBM InfoSphere Information Server (CVE-2021-23450)			
+IBM PSIRT: Security Bulletin: IBM InfoSphere Information Server is vulnerable to cross-site scripting (CVE-2022-22427)
+IBM PSIRT: Multiple vulnerabilities in IBM Java Runtime which affects IBM Integration Bus and IBM App Connect Enterprise
+IBM PSIRT: Security Bulletin: IBM QRadar SIEM is vulnerable to using components with known vulnerabilities (CVE-2022-22345, CVE-2020-8022, CVE-2021-33813, CVE-2020-9488)
+IBM PSIRT: Due to use of IBM SDK, Java Technology Edition, IBM Tivoli Application Dependency Discovery Manager (TADDM) is vulnerable to denial of service		
+IBM PSIRT: Security Bulletin: Multiple vulnerabilities in Linux Kernel affect IBM QRadar SIEM (CVE-2021-22543, CVE-2021-3653, CVE-2021-3656, CVE-2021-37576)
+IBM PSIRT: Security Bulletin: Multiple vulnerabilities in Linux Kernel affect IBM QRadar SIEM (CVE-2021-22543, CVE-2021-3653, CVE-2021-3656, CVE-2021-37576)
+IBM PSIRT: Security Bulletin: Multiple vulnerabilities in WebSphere Application Server Liberty affect IBM InfoSphere Information Server
+IBM PSIRT: Security Bulletin: IBM InfoSphere Information Server is vulnerable to cross-site scripting (CVE-2021-38952)
+IBM PSIRT: Security Bulletin: IBM InfoSphere Information Server is affected by multiple vulnerabilities in XStream
+IBM PSIRT: Security Bulletin: IBM InfoSphere Information Server is vulnerable to privilege escalation (CVE-2022-22441)
+IBM PSIRT: Security Bulletin: IBM InfoSphere Information Server may be affected by vulnerabilities in Apache log4j 1.x version
+Cisco: Cisco Firepower Management Center Software Cross-Site Scripting Vulnerabilities
+Avaya: ASA-2022-015 (RHSA-2022-0366)
+Dell: DSA-2022-073: Dell Unisphere for PowerMax, Dell Unisphere for PowerMax vApp, Dell Solutions Enabler vApp, Dell Unisphere 360, Dell VASA Provider vApp, and Dell PowerMax Embedded Management Security Update for Multiple Vulnerabilities
+Ubuntu: [USN-5658-1] DHCP vulnerabilities
+Ubuntu: [USN-5660-1] Linux kernel (GCP) vulnerabilities
+Ubuntu: [USN-5659-1] kitty vulnerabilities
+Novell: SUSE-SU-2022:3530-1: important: Security update for helm3
+Novell: openSUSE-SU-2022:10142-1: moderate: Security update for pngcheck
+Novell: SUSE-SU-2022:3529-1: important: Security update for sendmail
+Novell: SUSE-SU-2022:3525-1: moderate: Security update for cifs-utils
+Novell: SUSE-SU-2022:3524-1: important: Security update for nodejs16
+Red Hat: [RHSA-2022:6820-01] Moderate: prometheus-jmx-exporter security update
+Red Hat: [RHSA-2022:6815-01] Important: squid security update
+Red Hat: [RHSA-2022:6825-01] Important: Red Hat JBoss Enterprise Application Platform 7.4.7 Security update
+Red Hat: [RHSA-2022:6822-01] Important: Red Hat JBoss Enterprise Application Platform 7.4.7 Security update
+Red Hat: [RHSA-2022:6823-01] Important: Red Hat JBoss Enterprise Application Platform 7.4.7 Security update
+Red Hat: [RHSA-2022:6821-01] Important: Red Hat JBoss Enterprise Application Platform 7.4.7 Security update
+Hitachi: Security information for Hitachi Disk Array Systems
+Oracle: [El-errata] ELSA-2023-5191 Important: Oracle Linux 7 thunderbird security update			
+Oracle: [El-errata] ELSA-2023-5197 Important: Oracle Linux 7 firefox security update
